@@ -11,12 +11,12 @@
 /* Variáveis */
 
 :root {
-    --main-color: #54b689;
+    --main-color: #0099ff;
     --main-text-color: #fff;
-    --border-color: #999;
-    --bio-bg-color: #1e2a3a;
+    --border-color: #C1CFDA;
+    --bio-bg-color: #073047;
     --bio-border-color: #293544;
-    --about-bg-color: #111821;
+    --about-bg-color: #0b1a2e;
 }
 
 /* general */
@@ -130,6 +130,7 @@
 }
 
 #btn-projects {
+    
     font-size: 16px;
     font-weight: bold;
     color: var(--main-text-color);
@@ -138,7 +139,7 @@
     border-radius: 5px;
     text-decoration: none;
     transition: .5s;
-    margin: 25px 0;
+    margin: 25px 10px;
     padding: 12px 10px;
     width: 150px;
     display: flex;
@@ -188,6 +189,10 @@
 .skills-box i {
     font-size: 45px;
     margin-right: 10px;
+}
+
+#github, #eletronic {
+    color: #999;
 }
 
 /* mobile */
