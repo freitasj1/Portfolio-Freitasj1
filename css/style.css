@@ -245,7 +245,7 @@
         font-size: 60px;
     }
 }
-.main_footer          { 
+/* .main_footer          { 
 	background-color: var(--footer-bg-color); 
 	color: var(--main-text-color); 
 	font-size:0.875em; 
@@ -380,4 +380,4 @@
 @media (min-width:48em){
 .colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
 .colfooter:nth-of-type(3n+0){ margin-right:0; border-right:0;}
-}
+} */
