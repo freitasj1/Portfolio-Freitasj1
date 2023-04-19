@@ -72,6 +72,17 @@
     margin-bottom: 25px;
 }
 
+#bio-image:hover {
+    scale: 1.15;
+    transition: 1s;
+    border-radius: 40%;
+}
+
+#bio-image:not(:hover) {
+    scale: 1;
+    transition: 1s;
+}
+
 #social-container {
     display: flex;
     justify-content: center;
@@ -79,6 +90,7 @@
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 25px;
     padding-bottom: 25px;
+    
 }
 
 #social-container li {
@@ -90,6 +102,8 @@
     color: var(--main-color);
     font-size: 30px;    
 }
+
+
 
 #email-container {
     display: flex;
@@ -196,6 +210,7 @@
 #github, #eletronic {
     color: #999;
 }
+
 
 /* mobile */
 @media(max-width: 450px) {
@@ -377,7 +392,7 @@
 }
 /*Responsivo*/
 /*768PX BREAKPOINT*/
-@media (min-width:48em){
+/* @media (min-width:48em){
 .colfooter  { width:30%; margin-right:5%; margin-bottom:0; }
 .colfooter:nth-of-type(3n+0){ margin-right:0; border-right:0;}
-} */
+}  */
