@@ -15,10 +15,11 @@
     --main-color: #0099ff;
     --main-text-color: #fff;
     --border-color: #C1CFDA;
-    --bio-bg-color: #073047;
+    --bio-bg-color: #1E1E1E;
     --bio-border-color: #293544;
-    --about-bg-color: #0b1a2e;
+    --about-bg-color: #272727;
     --footer-bg-color:#032c44;
+    --projete-nav-color:#414040;
 }
 
 /* general */
@@ -132,8 +133,25 @@
 #name {
     font-size: 42px;
     margin-bottom: 15px;
-}
+    border-right: 4px solid;
+    width: 21.15ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.3s steps(46), 
+    blinking 0.5s infinite step-end alternate;
 
+}
+@keyframes typing {
+    from {
+        width: 0;
+        
+    }
+}
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
 #title {
     font-size: 24px;
     margin-bottom: 15px;
@@ -160,20 +178,28 @@
     width: 150px;
     display: flex;
     text-align: center;
-}
-
-#btn-projects ion-icon, #btn-projects span {
-    flex: 1 1 0;   
-}
-
-#btn-projects ion-icon {
-    font-size: 20px;
-    max-width: 20px;
+    box-shadow:0 0 5px #0099ff, 0 0 10px #0099ff;
+    scale:0.95;
 }
 
 #btn-projects:hover {
-    background-color: transparent;
+    background-color: #0099ff;
+    transition: 0.8s;
+    border-color:#0099ff;
+    box-shadow: 0 0 10px #032c44, 0 0 25px #0099ff, 0 0 50px #032c44;
+    scale: 1.05;
 }
+
+#btn-projects ion-icon, #btn-projects span {
+    flex: 1 1 100%;   
+}
+
+#btn-projects ion-icon {
+    font-size: 25px;
+    max-width: 25px;
+
+}
+
 
 #skills-section-title {
     border-top: 1px solid var(--border-color);
@@ -219,8 +245,22 @@
     color: #999;
 }
 
+#teste {
+    font-size: 2rem;
+    
+}
+#teste:hover {
+    color: var(--main-color);
+    transition: 0.8s;
+}
+#teste:not(:hover) {
+    font-size: 2rem;
+    color: var(--main-text-color);
+    transition: 0.8s;
+}
 
-/* mobile */
+
+/* responsivo(mobile) */
 @media(max-width: 450px) {
     #container {
         flex-direction: column;
@@ -268,3 +308,4 @@
         font-size: 60px;
     }
 }
+
