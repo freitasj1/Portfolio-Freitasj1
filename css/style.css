@@ -200,7 +200,6 @@
 
 }
 
-
 #skills-section-title {
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
@@ -215,7 +214,7 @@
 }
 
 .skills-box {
-    flex: 1 1 25%;
+    flex: 20%;
     max-width: 50%;
     margin-bottom: 35px;
 }
@@ -258,7 +257,11 @@
     color: var(--main-text-color);
     transition: 0.8s;
 }
-
+#name2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    width: 21.15ch;
+}
 
 /* responsivo(mobile) */
 @media(max-width: 450px) {
